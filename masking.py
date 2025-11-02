@@ -18,6 +18,6 @@ cv.imshow('circle',mask)
 
 bitwisedimage=cv.bitwise_and(resized,resized,mask=mask)
 cv.imshow('bitwised_image',bitwisedimage)
-
+cv.imwrite('newfile.png',resized)
 cv.waitKey(0)
 cv.destroyAllWindows()
